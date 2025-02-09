@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Centering the Quote Container */
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Heading Style */
+.quote-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Quote Text Style */
+.quote {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Error Message Style */
+.error {
+  color: #ff6b6b;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Button Styling */
+.quote-button {
+  background: #ff6b6b;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.quote-button:hover {
+  background: #d64545;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quote-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .quote {
+    font-size: 18px;
+  }
+
+  .quote-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
